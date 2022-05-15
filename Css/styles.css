@@ -1,13 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-h1{font-size: 70px;}
+/* Estilos para el encabezado */
+header div{
+    background-color: #232931;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header .logo{
+    font-size: 70px;
+    margin-left: 60px;
+}
+header p {
+    color: #EEEEEE;
+}
+header p span {
+    color: #4ECCA3;
+}
+
+header nav a{
+    text-decoration: none; 
+    color: aliceblue;
+    margin-right: 40px;
+    border: #4ECCA3;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 20px;
+}
+
+header nav a:hover{
+    background-color: #4ECCA3;
+    padding: 22px;
+}
+
+/* Estilos para el encabezado */
+
+/* Estilos para el secction I */
+
+.contenido{
+    padding-top: 250px;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido .contenedor{
+    max-width: 800px;
+}
+
+.contenido .contenedor h1{
+    font-size: 40px;
+}
+.contenido .contenedor p{
+    font-size: 25px;
+}
+/* Estilos para el secction I */
+
+/* Estilos para el secction II */
+
+.contenido2{
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido2 .contenedorInfo{
+    max-width: 800px;
+}
+
+.contenido2 .contenedorInfo h1{
+    font-size: 40px;
+}
+.contenido2 .contenedorInfo p{
+    font-size: 25px;
+}
+
+/* Estilos para el secction II */
+
+
+
+
+h1{font-size: 40px;}
 h2{font-size: 60px;}
 h3{font-size: 50px;}
 p{font-size: 40px;}
 
-body{
-    font-style: italic;
-}
