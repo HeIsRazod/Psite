@@ -69,6 +69,7 @@ header nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .contenido2 .contenedorInfo{
