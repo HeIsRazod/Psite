@@ -191,6 +191,100 @@ header nav a:hover{
 
 /* Estilos para el secction III */
 
+/* Estilos para el secction IV */
+
+#contactate h2 {
+    margin: 150px;
+    text-align: center;
+}
+
+#contactate button {
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 150px;
+    margin-top: 80px;
+    border-radius: 30px;
+    box-shadow: 2px 2px #232931;  
+    font-size: 25px;
+    transition: background-color .5s;
+}
+
+#contactate .top{
+    margin-right: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    box-shadow: 2px 2px #232931; 
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#contactate button:hover{
+    color: #EEEEEE;
+    background-color: #232931;
+}
+
+
+
+/* Estilos para el secction IV */
+
+
+/* Estilos para el footer */
+footer{
+    background-color: #232931;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    border-radius: 30px;
+
+}
+footer p{
+
+    display: block;
+    margin-right: auto;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 120px;
+
+}
+
+footer ul{
+    position: relative;
+    display: flex;
+    padding-top: 50px;
+    padding-right: 100px;
+
+
+}
+
+footer ul li{
+
+    padding-right: 10px;
+    margin-left: 80px;
+    list-style: none;
+
+}
+
+ul li a{
+    font-size: 30px;
+    color: #4ECCA3;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    font-size: 35px;
+    filter: drop-shadow(0 0 20px #4ECCA3);
+
+}
+
+
+
+/* Estilos para el footer */
+
 
 
 
