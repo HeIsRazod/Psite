@@ -40,6 +40,41 @@ header nav a:hover{
 
 /* Estilos para el encabezado */
 
+/* Estilos para el slider */
+
+#slider .slider_images{
+    display: none;
+    margin-left: 25%;
+}
+
+#slider .slider_navigation{
+    margin-left: 43%;
+}
+
+.slider_navigation button{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 25px;
+    box-shadow: 2px 2px#232931;
+    background-color: aliceblue;
+    transition: background-color 1s;
+}
+
+
+.slider_navigation button:hover{
+    background-color: #4ECCA3;
+
+}
+
+.slider_images .img{
+
+}
+
+
+
+/* Estilos para el slider */
+
 /* Estilos para el secction I */
 
 .contenido{
