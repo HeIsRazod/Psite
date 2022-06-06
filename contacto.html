@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/stylesContacto.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts.js"></script>
+    
+    <title>Psite Psicologia</title>
+</head>
+<header>
+    <div id="inicio" class="encabezado">
+      <p class="logo"><span>P</span>site</p>
+      <nav>
+        <a href="index.html">¿Quienes somos?</a>
+        <a href="#">Nuestros paquetes</a>
+        <a href="#formulario">Contactanos</a>
+      </nav>
+    </div>
+  </header>
+<body>
+
+    <section id="formulario">
+
+        <h2>Formulario de contacto Psite</h2>
+
+        <form onsubmit= " return enviar()">
+            <h3>Ingrese su Nombre</h3>
+            <input id="f_nombre" name="f_nombre" />
+            <h3>Ingrese su apellido</h3>
+            <input id="f_apellido" name="f_apellido" />
+            <h3>Ingrese su correo electronico</h3>
+            <input id="f_correo" name="f_correo" />
+            <h3>Ingrese por que paquete esta interesado </h3>
+            <div>
+                <input type="checkbox" id="paq1" name="paquete"/>
+                <label for="paq1"> Paquete Educacion</label>
+                <input type="checkbox" id="paq2" name="paquete"/>
+                <label for="paq2"> Paquete Juridico</label>
+                <input type="checkbox" id="paq3" name="paquete"/>
+                <label for="paq3"> Paquete Clinico</label>
+                <input type="checkbox" id="paq4" name="paquete"/>
+                <label for="paq4"> Paquete Laboral</label>
+                <input type="checkbox" id="paq5" name="paquete"/>
+                <label for="paq5"> Consulta General</label>
+            </div>
+            <div>
+                <h3>Desea recibir informacion sobre Psite a su correo?</h3>
+                <input type="radio" id="opc1" name="opciones" value="1"/>
+                <label for="opc1"> Si</label>
+                <input type="radio" id="opc2" name="opciones" value="0"/>
+                <label for="opc2"> No</label>
+
+            </div>
+
+            <button id="Enviar">Enviar</button>
+        
+        </form>
+
+
+
+    </section>
+    
+</body>
+
+<footer> 
+    <ul>
+      <li class="fb">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      </li>
+      <li class="yt">
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </li>
+      <li class="tw">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li class="ig">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+      <li class="wa">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </li>
+    </ul>
+
+    <p>&copy; Psite, todos los derechos reservados, 2022</p>
+  </footer>
+</html>

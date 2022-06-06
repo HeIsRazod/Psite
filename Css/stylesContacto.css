@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Estilos para el encabezado */
+header div{
+    height: 150px;
+    background-color: #232931;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header .logo{
+    font-size: 70px;
+    margin-left: 60px;
+}
+header p {
+    color: #EEEEEE;
+}
+header p span {
+    color: #4ECCA3;
+}
+
+header nav a{
+    text-decoration: none; 
+    color: aliceblue;
+    margin-right: 40px;
+    border: #4ECCA3;
+    border-radius: 30px;
+    border-style: solid;
+    padding: 20px;
+    transition: background-color .5s;
+}
+
+header nav a:hover{
+    background-color: #4ECCA3;
+}
+
+/* Estilos para el encabezado */
+
+/* Estilos para el formulario */
+
+#formulario {
+    width: 800px;
+    height: 800px;
+    
+}
+
+/* Estilos para el formulario */
+
+
+
+
+/* Estilos para el footer */
+footer{
+    background-color: #232931;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    border-radius: 30px;
+
+}
+footer p{
+
+    display: block;
+    margin-right: auto;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 120px;
+
+}
+
+footer ul{
+    position: relative;
+    display: flex;
+    padding-top: 50px;
+    padding-right: 100px;
+
+
+}
+
+footer ul li{
+
+    padding-right: 10px;
+    margin-left: 80px;
+    list-style: none;
+
+}
+
+ul li a{
+    font-size: 30px;
+    color: #4ECCA3;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    font-size: 35px;
+    filter: drop-shadow(0 0 20px #4ECCA3);
+
+}
+
+
+
+/* Estilos para el footer */
