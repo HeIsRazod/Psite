@@ -32,6 +32,19 @@ function recorrido (num){
 function enviar() {
     if (validar()){
 
+        let f_nombre = document.getElementById("f_nombre");
+        let f_apellido = document.getElementById("f_apellido");
+        let f_correo = document.querySelector("#f_correo");
+        let paq1 = document.querySelector("#paq1");
+        let paq2 = document.querySelector("#paq2");
+        let paq3 = document.querySelector("#paq3");
+        let paq4 = document.querySelector("#paq4");
+        let paq5 = document.querySelector("#paq5");
+        let opc1 = document.querySelector("#opc1");
+
+        let p = document.createElement("p");
+        li.innerHTML = `${f_nombre.value} ${f_apellido.value} con correo ${f_correo.value} Quiere obtener informacion sobre los paquetes: <br/>` ;
+
     }
     return false; 
 }
@@ -40,37 +53,73 @@ function validar(){
     let f_nombre = document.getElementById("f_nombre");
     let f_apellido = document.getElementById("f_apellido");
     let f_correo = document.querySelector("#f_correo");
+    let paq1 = document.querySelector("#paq1");
     let paq2 = document.querySelector("#paq2");
     let paq3 = document.querySelector("#paq3");
     let paq4 = document.querySelector("#paq4");
     let paq5 = document.querySelector("#paq5");
-    let opc1 = document.querySelector("#opc1")
+    let opc1 = document.querySelector("#opc1");
+    let errores = [];
 
-    if(f_nombre.value == ""){
-        console.log("Nombre no puede ser vacio");
+    let inputs = document.querySelectorAll("input");
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].style.border = "revert";
+        
     }
+
+    if(f_nombre.value.trim() == ""){
+        errores.push("Nombre no puede ser vacio");
+        f_nombre.style.border = "1px solid red";
+    }
+    
     let pattern = /^[A-Z]+$/i
 
     if (!pattern.test(f_nombre.value)) {
-        console.log("Por favor, ingrese solo letras")
+        errores.push("Por favor, ingrese solo letras")
+        f_nombre.style.border = "1px solid red";
     }
 
-    if(f_apellido.value == ""){
-        console.log("Apellido no puede ser vacio");
+    if(f_apellido.value.trim() == ""){
+        errores.push("Apellido no puede ser vacio");
+        f_apellido.style.border = "1px solid red";
     }
     if (!pattern.test(f_apellido.value)) {
-        console.log("Por favor, ingrese solo letras")
+        errores.push("Por favor, ingrese solo letras")
+        f_apellido.style.border = "1px solid red";
     }
 
     let er = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
 
     if (!er.test(f_correo.value)) {
-        console.log("Ingrese un correo electronico valido");
+        errores.push("Ingrese un correo electronico valido");
+        f_correo.style.border = "1px solid red";
         
     }
 
+    if (!paq1.checked && !paq2.checked && !paq3.checked && !paq4.checked && !paq5.checked) {
+        errores.push("Debe seleccionar al menos una opcion");
+        paq1.parentNode.style.border = "1px solid red";
+    }
 
-    return true;
+    if (!document.querySelector('input[name="opciones"]:checked')) { 
+        errores.push("Debe seleccionar si le gustaria o no");
+        opc1.parentNode.style.border = "1px solid red";
+    }
+
+
+    let listaerrores = document.querySelector("#lista-errores");
+    listaerrores.innerHTML = "";
+    errores.forEach(e => {
+        let li = document.createElement("li");
+        li.innerHTML = e;
+        listaerrores.appendChild(li);
+        console.log(e);
+
+    })
+
+
+
+    return errores.length == 0;
 
 
 
