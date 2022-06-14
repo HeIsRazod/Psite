@@ -43,8 +43,8 @@ header nav a:hover{
 /* Estilos para el slider */
 
 #slider .slider_images{
-    display: none;
-    margin-left: 25%;
+    margin-top: 80px;
+    margin-left: 39%;
 }
 
 #slider .slider_navigation{
@@ -52,8 +52,8 @@ header nav a:hover{
 }
 
 .slider_navigation button{
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
     border-radius: 20px;
     font-size: 25px;
     box-shadow: 2px 2px#232931;
