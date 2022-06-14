@@ -40,23 +40,77 @@ header nav a:hover{
 
 /* Estilos para el encabezado */
 
-body h1{
-    text-align: center;
-    margin-top: 100px;
-}
 
-/* Estilos para el section 1*/
+/* Estilos para el secction I */
 
-.contenedorImg1{
-    width: 61px;
-    height: 20px;
-}
 .contenidoEdu{
-    width: 400px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoEdu .contenedorEdu{
+    max-width: 800px;
+}
+
+.contenidoEdu .contenedorEdu h1{
+    font-size: 40px;
+}
+.contenidoEdu .contenedorEdu p{
+    font-size: 25px;
+}
+/* Estilos para el secction I */
+
+/* Estilos para el secction II */
+
+.contenidoLabo{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* flex-direction: row-reverse; */
+}
+
+.contenidoLabo .contenedorLabo{
+    max-width: 600px;
+}
+
+.contenedorLabo h1{
+    font-size: 40px;
+}
+.contenedorLabo p{
+    font-size: 25px;
 }
 
 
-/* Estilos para el section 1*/
+
+/* Estilos para el secction II */
+
+/* Estilos para el secction III */
+
+.contenidoCli{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoCli .contenedorCli{
+    max-width: 800px;
+}
+
+.contenidoCli .contenedorCli h1{
+    font-size: 40px;
+}
+.contenidoCli .contenedorCli p{
+    font-size: 25px;
+}
+
+
+/* Estilos para el secction III */
 
 /* Estilos para el footer */
 footer{
