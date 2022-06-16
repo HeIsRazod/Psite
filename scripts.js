@@ -61,7 +61,7 @@ function enviar() {
             p.innerHTML += "Consulta general";
         }
 
-        p.innerHTML += opc1[0].checked?" Y le gustaria recibir info": "No quiere recibir info";
+        p.innerHTML += opc1.checked?" Y le gustaria recibir info": "No quiere recibir info";
         
         document.getElementById("demo").appendChild(p);
 
