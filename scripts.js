@@ -43,7 +43,27 @@ function enviar() {
         let opc1 = document.querySelector("#opc1");
 
         let p = document.createElement("p");
-        li.innerHTML = `${f_nombre.value} ${f_apellido.value} con correo ${f_correo.value} Quiere obtener informacion sobre los paquetes: <br/>` ;
+        p.innerHTML = f_nombre.value +" "+ f_apellido.value +" con email " + f_correo.value + " desea recibir informacion sobre: ";
+
+        if (paq1.checked) {
+            p.innerHTML += "Paquete educacion ";
+        }
+        if (paq2.checked) {
+            p.innerHTML += "Paquete Juridico ";
+        }
+        if (paq3.checked) {
+            p.innerHTML += "Paquete Clinico ";
+        }
+        if (paq4.checked) {
+            p.innerHTML += "Paquete Laboral ";
+        }
+        if (paq5.checked) {
+            p.innerHTML += "Consulta general";
+        }
+
+        p.innerHTML += opc1[0].checked?" Y le gustaria recibir info": "No quiere recibir info";
+        
+        document.getElementById("demo").appendChild(p);
 
     }
     return false; 
